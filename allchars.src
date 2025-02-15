@@ -1,0 +1,59 @@
+padding$ = ""
+
+asm_addr = alloc(32)
+
+assemble asm_addr, 2
+  lda 1
+  pha
+  lda #2
+  sta 1
+  lda #0
+  sta $c000+80+4
+  pla
+  sta 1
+  rts
+
+print chr$(12)
+
+step = 10
+i = 0
+while i <= 255
+  for j = 0 to step-1
+    code = i+j
+    calc_padding(code)
+    
+    if code <= 255
+      print_info(code)
+    endif
+  next
+  print
+  print
+  i = i + step
+wend
+
+end
+
+proc calc_padding(c)
+  if code < 10
+    padding$ = "  "
+  else
+    if code <100
+      padding$ = " "
+    else
+      padding$ = ""
+    endif
+  endif
+endproc
+
+proc print_info(c)
+  if c = 0
+    print "  0   ";
+    call asm_addr
+  else
+    print padding$;
+    print c;
+    print " ";
+    cprint chr$(c);
+    print " ";
+  endif
+endproc

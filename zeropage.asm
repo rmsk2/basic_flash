@@ -1,0 +1,16 @@
+PARM_REF = $90;$91
+TXT_PTR1 = $92;$93
+TXT_PTR2 = $94;$95
+TXT_PTR3 = $96;$97
+TXT_PTR4 = $98;$99
+MEM_PTR1 = $9A;$9B
+MEM_PTR3 = $9C;$9D
+PTR_SOURCE = $9E;/$9F
+PTR_TARGET = $A0;/$A1
+FILEIO_PTR1 = $A2;/$A3
+CLEAN_PTR = $A4;/$A5
+PATH_PTR = $A6;/$A7
+PARM_PTR = $A8;/$A9
+NUM_BYTES = $AA
+; 24 bytes for data structure
+COPY_TAB = $B0;-$C8
