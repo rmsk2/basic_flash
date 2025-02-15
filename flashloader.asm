@@ -68,7 +68,7 @@ load16BitImmediate .macro  val, addr
 BLOCK1 .dstruct BlockSpec_t, 0, 20, 0, 32  ; copy detected flash block to RAM block 20 which starts at $28000
 ;BLOCK2 .dstruct BlockSpec_t, 0, 21, 0, 32  ; copy detected flash block to RAM block 21 which starts at $2A000
 ;BLOCK3 .dstruct BlockSpec_t, 0, 22, 0, 32  ; copy detected flash block to RAM block 22 which starts at $2C000
-;BLOCK4 .dstruct BlockSpec_t, 0, 23, 0, 32  ; copy detected flash block to RAM block 21 which starts at $2E000
+;BLOCK4 .dstruct BlockSpec_t, 0, 23, 0, 32  ; copy detected flash block to RAM block 23 which starts at $2E000
 
 loader
     ; setup MMU

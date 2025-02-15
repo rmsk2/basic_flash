@@ -10,7 +10,7 @@ source code via a [text editor](https://github.com/rmsk2/moreorless).
 You will need 64tass, a Python3 interpreter and GNU Make to build the software. Simply use `make` to create a flash cartridge image called `cartridge.bin` or
 individual 8K flash blocks called `basic_01.bin` and `basic_02.bin`. The 8K blocks can be written to onbaord flash via FoenixMgr and the cartridge image can
 be written to a flash cartridge via [fcart](https://github.com/rmsk2/cartflash). Both versions do not depend on the location in flash memory. I.e. as long as
-you use consecutive flash blocks these binaries can be stored anywhere inflash memory. Executing `make clean` removes all files which are created during the 
+you use consecutive flash blocks these binaries can be stored anywhere in flash memory. Executing `make clean` removes all files which are created during the 
 build process.
 
 ## Running the software
